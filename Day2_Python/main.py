@@ -14,3 +14,9 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+# Study PEP 8 guidelines at:
+# https://peps.python.org/pep-0008/
+# or open the below file as html in your browser:
+# PEP 8 -- Style Guide for Python Code
