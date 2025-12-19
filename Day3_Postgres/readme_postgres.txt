@@ -82,4 +82,12 @@ ORDER BY distance
 LIMIT 5;
 This query will return the 5 closest vectors to the vector `[1, 2, 3]` based on Euclidean distance.
 For more information on the `vector` extension and its capabilities, refer to the official documentation:
-- PostgreSQL vector extension:
+- PostgreSQL vector extension download link :
+https://github.com/andreiramani/pgvector_pgsql_windows/releases
+
+
+| Operator | Meaning                     |
+| -------- | --------------------------- |
+| `<->`    | Euclidean distance          |
+| `<=>`    | Cosine distance (MOST USED) |
+| `<#>`    | Inner product               |
