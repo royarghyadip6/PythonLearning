@@ -1,0 +1,7 @@
+Name,Age,Address,Qualification,IsEmployed,Salary
+Jai,27,Delhi,Msc,true,50000
+Princi,24,Kanpur,MA,false,NaN
+Gaurav,22,Allahabad,MCA,False,None
+Anuj,32,Kannauj,Phd,True,70000
+Anindita,25,Tamluk,Bsc,True,20000
+Palash,28,Canning,BTech,True,100000
