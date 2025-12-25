@@ -1,0 +1,17 @@
+#Create Virtual Environment:
+python -m venv arg_venv
+
+#Activate:
+arg_venv\Scripts\activate
+
+# Add
+#Install FastAPI and Uvicorn
+pip install fastapi uvicorn
+
+FastAPI → the framework
+Uvicorn → server to run FastAPI
+
+
+#to show whether it is installed or not
+pip show fastapi
+pip show uvicorn
