@@ -1,0 +1,8 @@
+emp_id,emp_name,salary,department,skills_set,assignedornot,client_name
+101,Arghya Roy,75000,IT,"Java,Spring Boot,SQL",Yes,Nokia
+102,Rahul Sen,62000,IT,"Python,FastAPI,PostgreSQL",No,
+103,Anita Das,58000,HR,"Recruitment,Communication",Yes,Internal
+104,Suman Paul,82000,Finance,"Accounting,Excel,Taxation",No,
+105,Priya Mukherjee,90000,IT,"LLM,LangChain,Prompt Engineering",Yes,OpenAI
+106,Amit Ghosh,67000,Support,"Linux,Bash,Networking",Yes,TCS
+107,Neha Banerjee,72000,IT,"JavaScript,React,REST API",No,
