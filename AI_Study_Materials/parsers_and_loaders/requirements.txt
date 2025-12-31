@@ -1,0 +1,6 @@
+langchain
+langchain_community
+pypdf
+beautifulsoup4
+# any one llm provider
+langchain_openai
