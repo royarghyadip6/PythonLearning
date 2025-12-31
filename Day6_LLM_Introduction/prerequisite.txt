@@ -1,0 +1,4 @@
+# Core LangChain + the Ollama integration
+pip install "langchain[all]"          # installs the base library & common deps
+pip install "langchain-ollama"        # Ollama LLM wrapper
+pip install "langchain-community"     # for UI utilities like StrOutputParser

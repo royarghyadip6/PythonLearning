@@ -11,3 +11,70 @@ Successfully installed annotated-types-0.7.0 anyio-4.12.0 certifi-2025.11.12 cha
 [notice] To update, run: python.exe -m pip install --upgrade pip
 
 (arg_venv) C:\Users\argroy>
+
+##############################
+Groq API : https://console.groq.com/keys
+
+############################### Agent using Ollama ##############################
+
+✅ STEP 1: Install Ollama (Free & Offline)
+Go to 👉 https://ollama.com
+Download Windows installer
+Install → finish
+Open Command Prompt and verify:
+    ollama --version
+If it prints a version → ✅ installed
+
+✅ STEP 2: Download a Free Model
+Start with a small, fast model:
+    ollama pull llama3.2:1b
+(Uses very little RAM, perfect for first agent)
+Test it:
+ollama run llama3.2:1b
+
+Type:
+What is Python?
+If it answers → 🎉 model is working
+
+✅ STEP 3: Create Python Virtual Environment (Recommended)
+python -m venv agent_venv
+agent_venv\Scripts\activate
+
+Install dependency:
+pip install requests
+
+✅ STEP 4: Your FIRST AGENT CODE (Very Simple)
+Create file: first_agent.py
+
+import requests
+import json
+
+def agent(prompt):
+    url = "http://localhost:11434/api/generate"
+
+    payload = {
+        "model": "llama3.2:1b",
+        "prompt": prompt,
+        "stream": False
+    }
+
+    response = requests.post(url, json=payload)
+    return response.json()["response"]
+
+# Chat loop
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ["exit", "quit"]:
+        break
+
+    reply = agent(user_input)
+    print("Agent:", reply)
+
+✅ STEP 5: Run Your Agent
+python first_agent.py
+
+Example:
+You: explain fastapi in one line
+Agent: FastAPI is a modern, fast Python web framework for building APIs with automatic validation.
+
+🎉 CONGRATS — YOU BUILT YOUR FIRST AI AGENT FOR FREE
