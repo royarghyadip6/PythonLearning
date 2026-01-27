@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/.idea/queries/Query.sql" value="5619c14e-edaa-4c6c-aa4d-cefe9168e62f" />
     <file url="file://$PROJECT_DIR$/Day3_Postgres/Query.sql" value="38e264e5-8867-4a4e-8c7c-5eef2c7bd733" />
     <file url="file://$PROJECT_DIR$/Day3_Postgres/embedding_vector.py" value="38e264e5-8867-4a4e-8c7c-5eef2c7bd733" />
   </component>

@@ -46,8 +46,12 @@ def divide(a: int, b: int) -> float:
 
 # Augment the LLM with tools
 tools = [add, multiply, divide]
+print("tools: ",tools)
 tools_by_name = {tool.name: tool for tool in tools}
+print("tools_by_name: ",tools_by_name)
+
 model_with_tools = model.bind_tools(tools)
+print("model_with_tools: ",model_with_tools)
 
 # Step 2: Define state
 
@@ -147,5 +151,5 @@ display(Image(agent.get_graph(xray=True).draw_mermaid_png()))
 from langchain.messages import HumanMessage
 messages = [HumanMessage(content="Add 3 and 4.")]
 messages = agent.invoke({"messages": messages})
-for m in messages["messages"]:
-    m.pretty_print()
+# for m in messages["messages"]:
+#     m.pretty_print()
